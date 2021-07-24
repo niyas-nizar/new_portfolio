@@ -34,6 +34,8 @@ $(document).ready(function () {
         $('#inputMessage').keyup(function () {
             validateMessage();
         });
+
+       
         
     function validateUsername() {
         let usernameValue = $('#inputName').val();
@@ -123,7 +125,7 @@ $(document).ready(function () {
         if (phone.length == '') {
             $('#phoneValid').show();
             $('#phoneValid').html
-            ("Please enter your phone number");
+            ("Please enter upto 10 digits");
             phoneError = false;
             return false;
         }
