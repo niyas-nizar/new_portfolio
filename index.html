@@ -512,7 +512,7 @@
 					               	<h2><a href="#">Freelance Software testing</a> <span>2019-2020</span></h2>
 					                  <p>Perform system, unit, acceptance, regression, load and functional/performance testing on dozens of applications using both automated and manual testing methods.</p>
 									  <ul>
-										  <li>Leverage knowledge of object-oriented  programming to help validate, verify, communication and resolve software issues through careful, thoroughly documented testing to maximize return of investment (ROI) for IT initiatives.</li>
+										  <li>Leverage knowledge of object-oriented  programming to help validate, verify, communication and resolve software issues through careful, thoroughly documented testing to maximize return of investment (ROI) for IT initiatives.</li> 
 										  <li>Tested new software builds and performed troubleshoot on existing software applications.</li>
 										  <li>Experience with communication to other sectors during my testing periods.</li>
 									  </ul>
@@ -648,11 +648,11 @@
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
 									<form id="submit-form">
 										<div class="form-group">
-											<input type="text" name="name" id="inputName" class="form-control" placeholder="Name">
+											<input type="text" name="name" id="inputName" class="form-control" placeholder="Name" onkeypress="return onlyStringKey(event)">
 											<p id="nameValid"></p>
 										</div>
 										<div class="form-group">
-											<input type="email" name="email" id="inputEmail" class="form-control"  placeholder="Email">
+											<input type="email" name="email" id="inputEmail" class="form-control"  placeholder="Email" onkeypress="return noSpaceKey(event)">
 											<p id="emailValid"></p>
 										</div>
 										<div class="form-group">
@@ -712,6 +712,24 @@
 		  // Only ASCII character in that range allowed
 		  var ASCIICode = (evt.which) ? evt.which : evt.keyCode
 		  if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+			  return false;
+		  return true;
+	  }
+
+	  function onlyStringKey(evt) {
+          
+		  // Only ASCII character in that range allowed
+		  var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+		  if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+			  return true;
+		  return false;
+	  }
+
+	  function noSpaceKey(evt) {
+          
+		  // Only ASCII character in that range allowed
+		  var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+		  if (ASCIICode == 32 )
 			  return false;
 		  return true;
 	  }
