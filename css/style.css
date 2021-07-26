@@ -69,6 +69,7 @@ figure {
 
 #colorlib-page {
   width: 100%;
+  
   overflow: hidden;
   position: relative; }
 
@@ -121,7 +122,8 @@ figure {
       padding-right: .3em; }
   #colorlib-aside #colorlib-main-menu {
     display: block;
-    width: 100%; }
+    width: 100%;
+   }
     #colorlib-aside #colorlib-main-menu .collapse {
       display: block !important; }
     #colorlib-aside #colorlib-main-menu ul {
@@ -219,7 +221,7 @@ figure {
             color: #2c98f0; }
 
 .container-wrap {
-  max-width: 1170px;
+  max-width: 100%;
   margin: 0 auto; }
 
 #colorlib-main {
@@ -231,7 +233,8 @@ figure {
   @media screen and (max-width: 768px) {
     #colorlib-main {
       width: 100%;
-      padding: 0 1em; } }
+      padding: 0 1em; } 
+    }
 
 #colorlib-hero {
   min-height: 500px;
@@ -250,9 +253,17 @@ figure {
       #colorlib-hero .flexslider .slides li {
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom center;
+        background-position: top center;
         min-height: 400px;
         position: relative; }
+      @media (min-width : 1367px){
+        #colorlib-hero .flexslider .slides li {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: top center;
+          min-height: 900px;
+          position: relative; }
+      }
     #colorlib-hero .flexslider .flex-control-nav {
       bottom: 20px;
       z-index: 1000;
@@ -1433,4 +1444,8 @@ body.offcanvas {
 .js .animate-box {
   opacity: 0; }
  
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
   

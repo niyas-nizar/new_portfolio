@@ -179,7 +179,7 @@ $(document).ready(function () {
                 (messageError == true)) {
                 return true;
             } else {
-                alert("Please fill the details")
+                
                 return false;
             }
         });
