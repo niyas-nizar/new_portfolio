@@ -651,23 +651,23 @@
 									<form id="submit-form">
 										<div class="form-group">
 											<input type="text" name="name" id="inputName" class="form-control" placeholder="Name" onkeypress="return onlyStringKey(event)">
-											<p id="nameValid"></p>
+											<p id="nameValid" style="color: red;"></p>
 										</div>
 										<div class="form-group">
 											<input type="email" name="email" id="inputEmail" class="form-control"  placeholder="Email" onkeypress="return noSpaceKey(event)">
-											<p id="emailValid"></p>
+											<p id="emailValid" style="color: red;"></p>
 										</div>
 										<div class="form-group">
 											<input type="tel" id="inputPhone" class="form-control" placeholder="Phone Number" name="Phone" maxlength="10"  onkeypress="return onlyNumberKey(event)">
-											<p id="phoneValid"></p>
+											<p id="phoneValid" style="color: red;"></p>
 										</div>
 										<div class="form-group">
 											<input type="text" id="inputPlace" class="form-control" placeholder="Place" name="place" >
-											<p id="placeValid"></p>
+											<p id="placeValid" style="color: red;"></p>
 										</div>
 										<div class="form-group">
 											<textarea name="message" id="inputMessage" cols="30" rows="5" class="form-control" placeholder="Type your message here..."></textarea>
-											<p id="messageValid"></p>
+											<p id="messageValid" style="color: red;"></p>
 										</div>
 										<div class="form-group">
 											<input type="submit" id="submit_btn" class="btn btn-primary btn-send-message" value="Send Message">
